@@ -11,7 +11,7 @@ def caesar_cipher(text, shift, direction='encrypt'):
             encrypted_text += char
     return encrypted_text
 
-st.title('Cتشفير اللغة العربية')
+st.title('تشفير اللغة العربية')
 
 # Text input
 text = st.text_area("Input Text", "")
