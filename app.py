@@ -21,7 +21,7 @@ mode = st.radio("Choose a mode:", ["تشفير", "فك التشفير"])
 
 # Process the text
 if st.button("Process"):
-    if mode == "Encrypt":
+    if mode == "تشفير":
         result = caesar_cipher(text, 3, 'encrypt')
     else:
         result = caesar_cipher(text, 3, 'decrypt')
