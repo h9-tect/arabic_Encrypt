@@ -11,13 +11,13 @@ def caesar_cipher(text, shift, direction='encrypt'):
             encrypted_text += char
     return encrypted_text
 
-st.title('Caesar Cipher with Arabic Support')
+st.title('Cتشفير اللغة العربية')
 
 # Text input
 text = st.text_area("Input Text", "")
 
 # Mode selection
-mode = st.radio("Choose a mode:", ["Encrypt", "Decrypt"])
+mode = st.radio("Choose a mode:", ["تشفير", "فك التشفير"])
 
 # Process the text
 if st.button("Process"):
