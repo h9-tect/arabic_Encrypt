@@ -22,6 +22,15 @@ def caesar_cipher(text, shift, direction='encrypt'):
                 shifted = (ord(char) - base - shift) % 256
             encrypted_text += chr(base + shifted)
 
+        # Arabic Unicode range
+        elif '\u0600' <= char <= '\u06FF':
+            base = ord('\u0600')
+            if direction == 'encrypt':
+                shifted = (ord(char) - base + shift) % 256
+            else:
+                shifted = (ord(char) - base - shift) % 256
+            encrypted_text += chr(base + shifted)
+
         else:
             encrypted_text += char
     return encrypted_text
