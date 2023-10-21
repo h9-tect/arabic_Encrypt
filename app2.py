@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Define the Arabic alphabet and additional letters
-additional_letters = "اها'
+additional_letters = "اها"
 
 # Function to generate a random word starting with a specified letter
 def generate_random_word(start_letter):
