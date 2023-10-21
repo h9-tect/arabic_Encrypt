@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Define the Arabic alphabet and additional letters
-additional_letters = 'ايو'
+additional_letters = "اها'
 
 # Function to generate a random word starting with a specified letter
 def generate_random_word(start_letter):
@@ -26,7 +26,7 @@ def process_sentence(sentence):
     return processed_sentence
 
 # Streamlit UI
-st.title("Arabic Linguistic Game")
+st.title("سغة ليمون")
 user_input = st.text_input("Enter a sentence:", value="عاشت فلسطين حرة")
 if st.button("Process Sentence"):
     result = process_sentence(user_input)
